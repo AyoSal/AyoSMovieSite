@@ -3,9 +3,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>fresh_tomatoes.html : /home/AyoS/myMovieSite/fresh_tomatoes.html : Editor : AyoS : PythonAnywhere</title>
+        <title>media.py : /home/AyoS/myMovieSite/media.py : Editor : AyoS : PythonAnywhere</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="fresh_tomatoes.html : /home/AyoS/myMovieSite/fresh_tomatoes.html : Editor : AyoS : PythonAnywhere">
+        <meta name="description" content="media.py : /home/AyoS/myMovieSite/media.py : Editor : AyoS : PythonAnywhere">
         <meta name="author" content="PythonAnywhere LLP">
         <meta name="google-site-verification" content="O4UxDrfcHjC44jybs2vajc1GgRkTKCTRgVzeV6I9V14" />
 
@@ -28,13 +28,13 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $.extend(Anywhere.urls, {
-          save: "/user/AyoS/files/home/AyoS/myMovieSite/fresh_tomatoes.html",
-          check_hash: "/user/AyoS/files/home/AyoS/myMovieSite/fresh_tomatoes.html",
-          run: "/user/AyoS/files/home/AyoS/myMovieSite/fresh_tomatoes.html" + "?run",
+          save: "/user/AyoS/files/home/AyoS/myMovieSite/media.py",
+          check_hash: "/user/AyoS/files/home/AyoS/myMovieSite/media.py",
+          run: "/user/AyoS/files/home/AyoS/myMovieSite/media.py" + "?run",
           update_editor_mode_preference: "/user/AyoS/account/update_editor_mode_preference",
         });
-        var filename = "/home/AyoS/myMovieSite/fresh_tomatoes.html";
-        var hash = "7fead8690bca2de2041b6c0cd0fbeca3";
+        var filename = "/home/AyoS/myMovieSite/media.py";
+        var hash = "e2fd38d54117303c300a2190910c8fdd";
 
         
             Anywhere.Editor.InitialiseAce(ace, Anywhere.urls, filename, hash);
@@ -42,7 +42,7 @@
             $("#id_keybinding_mode_select").val("normal");
             $("#id_keybinding_mode_select").trigger("change");
         
-        var consoleVisible = false;
+        var consoleVisible = true;
         Anywhere.Editor.splitPanes(consoleVisible);
 
         Anywhere.WebAppControl.initialize();
@@ -51,7 +51,7 @@
           {
             url: "/api/v0/user/AyoS/files/sharing/",
             csrfToken: "Tasd17rDQH9T9GkzLmDsfuo4P77j5li2",
-            path: "/home/AyoS/myMovieSite/fresh_tomatoes.html"
+            path: "/home/AyoS/myMovieSite/media.py"
           }
         );
 
@@ -144,7 +144,7 @@
 
       </div>
 
-      <span id="id_breadcrumbs_div"><a class="breadcrumbs_link breadcrumb_entry" href="/user/AyoS/files/">/</a><a class="breadcrumbs_link breadcrumb_entry" href="/user/AyoS/files/home">home</a><span class="breadcrumb_entry">/</span><a class="breadcrumbs_link breadcrumb_entry" href="/user/AyoS/files/home/AyoS">AyoS</a><span class="breadcrumb_entry">/</span><a class="breadcrumbs_link breadcrumb_entry" href="/user/AyoS/files/home/AyoS/myMovieSite">myMovieSite</a><span class="breadcrumb_entry">/</span><span class="breadcrumb_entry breadcrumb_terminal">fresh_tomatoes.html</span></span>
+      <span id="id_breadcrumbs_div"><a class="breadcrumbs_link breadcrumb_entry" href="/user/AyoS/files/">/</a><a class="breadcrumbs_link breadcrumb_entry" href="/user/AyoS/files/home">home</a><span class="breadcrumb_entry">/</span><a class="breadcrumbs_link breadcrumb_entry" href="/user/AyoS/files/home/AyoS">AyoS</a><span class="breadcrumb_entry">/</span><a class="breadcrumbs_link breadcrumb_entry" href="/user/AyoS/files/home/AyoS/myMovieSite">myMovieSite</a><span class="breadcrumb_entry">/</span><span class="breadcrumb_entry breadcrumb_terminal">media.py</span></span>
 
       <span>
         <span id="id_unsaved_changes_spacer">
@@ -172,6 +172,11 @@
             </button>
             <button id="id_save_as" class="btn btn-sm btn-default" title="Save As">Save as...</button>
           
+          
+          <button class="btn btn-sm btn-info run_button" title="Save &amp; Run (Ctrl + R)">
+            <span><code>&gt;&gt;&gt;</code></span>
+            Run
+          </button>
           
 
           
@@ -205,145 +210,18 @@
     <div id="id_ide_split_panes">
 
         
-            <div id="id_editor">
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;James Bond Collectors Item for the Last Decade!&lt;/title&gt;
+            <div id="id_editor">import webbrowser
 
-    &lt;!-- Bootstrap 3 --&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css&quot;&gt;
-    &lt;script src=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-    &lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
-        body {
-            padding-top: 80px;
-        }
-        #trailer .modal-dialog {
-            margin-top: 200px;
-            width: 640px;
-            height: 480px;
-        }
-        .hanging-close {
-            position: absolute;
-            top: -12px;
-            right: -12px;
-            z-index: 9001;
-        }
-        #trailer-video {
-            width: 100%;
-            height: 100%;
-        }
-        .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
-        }
-        .movie-tile:hover {
-            background-color: #EEE;
-            cursor: pointer;
-        }
-        .scale-media {
-            padding-bottom: 56.25%;
-            position: relative;
-        }
-        .scale-media iframe {
-            border: none;
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            background-color: white;
-        }
-    &lt;/style&gt;
-    &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
-        // Pause the video when the modal is closed
-        $(document).on(&#39;click&#39;, &#39;.hanging-close, .modal-backdrop, .modal&#39;, function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
-            $(&quot;#trailer-video-container&quot;).empty();
-        });
-        // Start playing the video whenever the trailer modal is opened
-        $(document).on(&#39;click&#39;, &#39;.movie-tile&#39;, function (event) {
-            var trailerYouTubeId = $(this).attr(&#39;data-trailer-youtube-id&#39;)
-            var sourceUrl = &#39;http://www.youtube.com/embed/&#39; + trailerYouTubeId + &#39;?autoplay=1&amp;html5=1&#39;;
-            $(&quot;#trailer-video-container&quot;).empty().append($(&quot;&lt;iframe&gt;&lt;/iframe&gt;&quot;, {
-              &#39;id&#39;: &#39;trailer-video&#39;,
-              &#39;type&#39;: &#39;text-html&#39;,
-              &#39;src&#39;: sourceUrl,
-              &#39;frameborder&#39;: 0
-            }));
-        });
-        // Animate in the movies when the page loads
-        $(document).ready(function () {
-          $(&#39;.movie-tile&#39;).hide().first().show(&quot;fast&quot;, function showNext() {
-            $(this).next(&quot;div&quot;).show(&quot;fast&quot;, showNext);
-          });
-        });
-    &lt;/script&gt;
-&lt;/head&gt;
+class Movie():
+    def __init__(self, movie_title, movie_storyline, poster_image,
+                 trailer_youtube):
+        self.title = movie_title
+        self.storyline = movie_storyline
+        self.poster_image_url = poster_image
+        self.trailer_youtube_url = trailer_youtube
 
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;body&gt;
-    &lt;!-- Trailer Video Modal --&gt;
-    &lt;div class=&quot;modal&quot; id=&quot;trailer&quot;&gt;
-      &lt;div class=&quot;modal-dialog&quot;&gt;
-        &lt;div class=&quot;modal-content&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;hanging-close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;
-            &lt;img src=&quot;https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&amp;h=24&quot;/&gt;
-          &lt;/a&gt;
-          &lt;div class=&quot;scale-media&quot; id=&quot;trailer-video-container&quot;&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    
-    &lt;!-- Main Page Content --&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      &lt;div class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
-        &lt;div class=&quot;container&quot;&gt;
-          &lt;div class=&quot;navbar-header&quot;&gt;
-            &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Six Awesome James Bond movies  &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;container&quot;&gt;
-      
-&lt;div class=&quot;col-md-6 col-lg-4 movie-tile text-center&quot; data-trailer-youtube-id=&quot;Aq0f1wYo6Vk&quot; data-toggle=&quot;modal&quot; data-target=&quot;#trailer&quot;&gt;
-    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/3/3d/Die_another_Day_-_UK_cinema_poster.jpg&quot; width=&quot;220&quot; height=&quot;342&quot;&gt;
-    &lt;h2&gt;Die Another Day&lt;/h2&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;col-md-6 col-lg-4 movie-tile text-center&quot; data-trailer-youtube-id=&quot;36mnx8dBbGE&quot; data-toggle=&quot;modal&quot; data-target=&quot;#trailer&quot;&gt;
-    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/1/15/Casino_Royale_2_-_UK_cinema_poster.jpg&quot; width=&quot;220&quot; height=&quot;342&quot;&gt;
-    &lt;h2&gt;Casino Royale&lt;/h2&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;col-md-6 col-lg-4 movie-tile text-center&quot; data-trailer-youtube-id=&quot;Ecq4uC0RHIs&quot; data-toggle=&quot;modal&quot; data-target=&quot;#trailer&quot;&gt;
-    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/2/2d/Quantum_of_Solace_-_UK_cinema_poster.jpg&quot; width=&quot;220&quot; height=&quot;342&quot;&gt;
-    &lt;h2&gt;Quantum of Solace&lt;/h2&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;col-md-6 col-lg-4 movie-tile text-center&quot; data-trailer-youtube-id=&quot;6kw1UVovByw&quot; data-toggle=&quot;modal&quot; data-target=&quot;#trailer&quot;&gt;
-    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/a/a7/Skyfall_poster.jpg&quot; width=&quot;220&quot; height=&quot;342&quot;&gt;
-    &lt;h2&gt;SkyFall&lt;/h2&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;col-md-6 col-lg-4 movie-tile text-center&quot; data-trailer-youtube-id=&quot;vBnGxAkdh_k&quot; data-toggle=&quot;modal&quot; data-target=&quot;#trailer&quot;&gt;
-    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/c/c3/Spectre_poster.jpg&quot; width=&quot;220&quot; height=&quot;342&quot;&gt;
-    &lt;h2&gt;Spectre&lt;/h2&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;col-md-6 col-lg-4 movie-tile text-center&quot; data-trailer-youtube-id=&quot;hUu6juQpLIs&quot; data-toggle=&quot;modal&quot; data-target=&quot;#trailer&quot;&gt;
-    &lt;img src=&quot;/Users/AyoSal/Documents/Python Tins/risico.tiff&quot; width=&quot;220&quot; height=&quot;342&quot;&gt;
-    &lt;h2&gt;Risico&lt;/h2&gt;
-&lt;/div&gt;
-
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+    def show_trailer(self):
+        webbrowser.open(self.trailer_youtube_url)
 </div>
         
 
@@ -352,7 +230,8 @@
                 <div id="id_ide_console_pane_buttons">
                     <center>
                         
-                            <p>This is not a Python file, you can't run it here.</p>
+                            <button class="btn btn-large btn-info run_button" title="Save &amp; Run (Ctrl + R)">&gt;&gt;&gt; Run this file</button>
+                            <button class="btn btn-large btn-info bash_console_here" title="Start a Bash console in this folder">$ Bash console here</button>
                         
                     </center>
                 </div>
